@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sure Sail</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <h1>⚓ Sure Sail – Project Integrity Evaluation</h1>
+    <nav>
+      <a href="#">Home</a> | 
+      <a href="#">What Is Sure Sail?</a> | 
+      <a href="#">Report</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="project-form">
+      <h2>Project Submission</h2>
+      <input type="text" id="project-name" placeholder="Project Name">
+      <input type="text" id="project-address" placeholder="Token Ticker / Contract Address">
+      <input type="text" id="project-site" placeholder="Website / GitHub / Whitepaper">
+      <textarea id="project-notes" placeholder="Notes / Observations"></textarea>
+    </section>
+
+    <section class="scoring">
+      <h2>Scoring Categories (0–10)</h2>
+      <div class="score-card">1. Verified Code <input type="range" min="0" max="10" value="0" class="score"></div>
+      <div class="score-card">2. Honest Tokenomics <input type="range" min="0" max="10" value="0" class="score"></div>
+      <div class="score-card">3. Liquidity Lock/Burn <input type="range" min="0" max="10" value="0" class="score"></div>
+      <div class="score-card">4. Permissionless Design <input type="range" min="0" max="10" value="0" class="score"></div>
+      <div class="score-card">5. Chain Interoperability <input type="range" min="0" max="10" value="0" class="score"></div>
+      <div class="score-card">6. Transparent Team <input type="range" min="0" max="10" value="0" class="score"></div>
+      <div class="score-card">7. Roadmap Alignment <input type="range" min="0" max="10" value="0" class="score"></div>
+      <div class="score-card">8. Governance <input type="range" min="0" max="10" value="0" class="score"></div>
+      <div class="score-card">9. Communication <input type="range" min="0" max="10" value="0" class="score"></div>
+      <div class="score-card">10. Real-World Integrity <input type="range" min="0" max="10" value="0" class="score"></div>
+    </section>
+
+    <section class="results">
+      <button onclick="calculateScore()">Submit for Score</button>
+      <div id="score-output">Your score will appear here.</div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Sure Sail Tool. Powered by the Captain’s Doctrine.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
